@@ -1,5 +1,4 @@
-# Collab_Passion_Project
-
+# Collab_Passion_Project: Bridging Fitness and Expression
 ## Owen's Blog Post
 We used his Blog's table and User's table 
 ## Abhishek's Workout Plans
