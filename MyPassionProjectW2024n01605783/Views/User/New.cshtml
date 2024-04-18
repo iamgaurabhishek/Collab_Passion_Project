@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create User</h2>
+<form action="/User/Create" method="POST">
+    <div>
+        <label class="form-label">User Name:</label> <input class="form-control" type="text" name="UserName" />
+    </div>
+    @*<div>
+            <label>User ID : </label> <input type="number" name="UserId" />
+        </div>*@
+    <div>
+        <label class="form-label">User Description </label> <input class="form-control" type="text" name="UserDescription" />
+    </div>
+    <div>
+        <label class="form-label">User Weight </label> <input class="form-control" type="number" name="UserWeight" />
+    </div>
+    <div>
+        <label class="form-label">User Age </label> <input class="form-control" type="number" name="UserAge" />
+    </div>
+    <div>
+        <input type="submit" value="Add User" class="btn btn-primary"/>
+    </div>
+</form>

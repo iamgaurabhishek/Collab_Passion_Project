@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MyPassionProjectW2024n01605783.Models.WorkoutDto>
+
+@{
+    ViewBag.Title = "List";
+}
+<a href="/Workout/new" class="btn btn-warning">Add Workout</a>
+<h2>List</h2>
+<ol class="list-group list-group-numbered">
+    @foreach (var Workout in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <h2><a href="/Workout/Details/@Workout.WorkoutId" class="fw-bold">@Workout.WorkoutName</a></h2>
+            <div class="list-group-item">Workout Status: @Workout.WorkoutStatus</div>
+            <div class="list-group-item">Workout Description: @Workout.WorkoutDescription</div>
+        </li>
+    }
+    <a href="/Exercise/List" class="btn btn-warning">View Exercise</a>
+</ol>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Blog</h2>
+<form action="/Blog/Create" method="POST">
+    <div>
+        <label class="form-label">Heading:</label> <input class="form-control" type="text" name="BlogHeading" />
+    </div>
+
+    <div>
+        <label class="form-label">Author </label> <input class="form-control" type="text" name="BlogAuthor" />
+    </div>
+   
+    <div>
+        <label class="form-label">Description </label> <input class="form-control" type="text" name="BlogShortDescription" />
+    </div>
+    <div>
+        <label class="form-label">Content </label> <input class="form-control" type="text" name="BlogContent" />
+    </div>
+    <div>
+        <label class="form-label">Published Date </label> <input class="form-control" type="date" name="BlogPublishedDate" />
+    </div>
+    <div>
+        <label class="form-label">Exercise Id</label> <input class="form-control" type="number" name="ExeciseId" />
+    </div>
+    <div>
+        <input type="submit" value="Add Blog" class="btn btn-primary" />
+    </div>
+</form>

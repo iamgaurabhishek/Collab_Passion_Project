@@ -1,0 +1,29 @@
+﻿﻿@model MyPassionProjectW2024n01605783.Models.BlogDto
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a style="color:#ab2020;" href="/Blog/DeleteConfirm/@Model.BlogId" class="btn btn-danger">Delete</a>
+
+<a href="/Blog/Edit/@Model.BlogId" class="btn btn-info">Update</a>
+
+<a href="/Blog/List" class="btn btn-success">Go back to list</a>
+<h2>@Model.BlogHeading</h2>
+<div class="mb-3">
+    <div>Author: @Model.BlogAuthor</div>
+</div>
+
+<div class="mb-3">
+    <div>Description: @Model.BlogShortDescription</div>
+</div>
+<div class="mb-3">
+    <div>Content: @Model.BlogContent</div>
+</div>
+<div class="mb-3">
+    <div>Published Date: @Model.BlogPublishedDate</div>
+</div>
+<div class="mb-3">
+    <div>Exercise Id: @Model.ExerciseId</div>
+</div>

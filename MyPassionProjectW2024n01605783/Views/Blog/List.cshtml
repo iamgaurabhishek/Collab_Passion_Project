@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MyPassionProjectW2024n01605783.Models.BlogDto>
+
+@{
+    ViewBag.Title = "List";
+}
+<a href="/blog/new" class="btn btn-warning">Add Blog</a>
+<h2>List</h2>
+<ol class="list-group list-group-numbered">
+    @foreach (var Blog in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <h2><a href="/Blog/Details/@Blog.BlogId" class="fw-bold">@Blog.BlogHeading</a></h2>
+            <div class="badge text-bg-primary rounded-pill">Author: @Blog.BlogAuthor</div>
+            <div class="badge text-bg-primary rounded-pill">Description: @Blog.BlogShortDescription</div>
+            <div class="badge text-bg-primary rounded-pill">Content: @Blog.BlogContent</div>
+            <div class="badge text-bg-primary rounded-pill">Published Date: @Blog.BlogPublishedDate</div>
+
+        </li>
+    }
+</ol>

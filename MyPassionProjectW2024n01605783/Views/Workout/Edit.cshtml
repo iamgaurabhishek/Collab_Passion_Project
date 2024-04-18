@@ -1,0 +1,40 @@
+﻿@model MyPassionProjectW2024n01605783.Models.WorkoutDto
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Workout</h2>
+
+<form method="POST" action="/Workout/Update/@Model.WorkoutId">
+    <input type="number" style="display:none;" name="WorkoutId" value="@Model.WorkoutId" />
+    <div>
+        <label>Workout Name</label>
+        <input class="form-control" type="text" name="WorkoutName" value="@Model.WorkoutName" />
+    </div>
+    <div>
+        <label>Workout Id</label>
+        <input class="form-control" type="text" name="WorkoutId" value="@Model.WorkoutId" />
+    </div>
+    <div>
+        <label>Workout Status</label>
+        <input class="form-control" type="text" name="WorkoutStatus" value="@Model.WorkoutStatus" />
+    </div>
+    <div>
+        <label>Workout Day</label>
+        <input class="form-control" type="text" name="WorkoutDay" value="@Model.WorkoutDay" />
+    </div>
+    <div>
+        <label>Workout Description</label>
+        <input class="form-control" type="text" name="WorkoutDescription" value="@Model.WorkoutDescription" />
+    </div>
+    <div>
+        <label>User Id</label>
+        <input class="form-control" type="number" name="UserId" value="@Model.UserId" />
+    </div>
+
+    <div>
+        <input type="submit" value="Update" class="btn btn-outline-success"/>
+    </div>
+
+</form>

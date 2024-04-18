@@ -1,0 +1,36 @@
+﻿﻿@model MyPassionProjectW2024n01605783.Models.ViewModel.DetailsExercise
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a style="color:#ab2020;" href="/Exercise/DeleteConfirm/@Model.SelectedExercise.ExerciseId" class="btn btn-danger">Delete</a>
+
+<a href="/Exercise/Edit/@Model.SelectedExercise.ExerciseId" class="btn btn-info">Update</a>
+
+<a href="/Exercise/List" class="btn btn-success">Go back to list</a>
+<h2>@Model.SelectedExercise.ExerciseName</h2>
+<div class="mb-3">
+    <div>Exercise Description : @Model.SelectedExercise.ExerciseDescription</div>
+</div>
+<div class="mb-3">
+    <div>Workout ID: @Model.SelectedExercise.WorkoutId</div>
+</div>
+<div class="mb-3">
+    <div>Workout Day: @Model.SelectedExercise.WorkoutDay</div>
+</div>
+<div class="mb-3">
+    <div>Workout Name: @Model.SelectedExercise.WorkoutName</div>
+</div>
+<a href="/Blog/New" class="btn btn-info">Blog</a>
+<hr/>
+
+<div>
+    @foreach (var blog in Model.BlogsForExercise)
+            {
+                <div>
+                    <h3>@blog.BlogAuthor</h3>
+                </div>
+            }
+</div>

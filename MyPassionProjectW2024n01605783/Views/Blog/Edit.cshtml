@@ -1,0 +1,39 @@
+﻿@model MyPassionProjectW2024n01605783.Models.BlogDto
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Blog</h2>
+
+<form method="POST" action="/Blog/Update/@Model.BlogId">
+    <input type="number" style="display:none;" name="BlogId" value="@Model.BlogId" />
+    <div>
+        <label>Heading</label>
+        <input class="form-control" type="text" name="BlogHeading" value="@Model.BlogHeading" />
+    </div>
+    <div>
+        <label>Author</label>
+        <input class="form-control" type="text" name="BlogAuthor" value="@Model.BlogAuthor" />
+    </div>
+    <div>
+        <label>Description</label>
+        <input class="form-control" type="text" name="BlogShortDescription" value="@Model.BlogShortDescription" />
+    </div>
+    <div>
+        <label>Content</label>
+        <input class="form-control" type="text" name="BlogContent" value="@Model.BlogContent" />
+    </div>
+    <div>
+        <label>Published Date</label>
+        <input class="form-control" type="date" name="BlogPublishedDate" value="@Model.BlogPublishedDate.ToString("yyyy-MM-dd")" />
+    </div>
+    <div>
+        <label>Exercise Id</label>
+        <input class="form-control" type="number" name="ExerciseId" value="@Model.ExerciseId" />
+    </div>
+    <div>
+        <input type="submit" value="Update" class="btn btn-outline-success" />
+    </div>
+
+</form>

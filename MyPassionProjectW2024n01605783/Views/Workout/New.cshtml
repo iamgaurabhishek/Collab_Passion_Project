@@ -1,0 +1,26 @@
+﻿
+
+<h2>Create Workout</h2>
+<form action="/Workout/Create" method="POST">
+    <div>
+        <label class="form-label">Workout Name:</label> <input class="form-control" type="text" name="WorkoutName" />
+    </div>
+    @*<div>
+            <label>Workout ID : </label> <input type="number" name="WorkoutId" />
+        </div>*@
+    <div>
+        <label class="form-label">Workout Description </label> <input class="form-control" type="text" name="WorkoutDescription" />
+    </div>
+    <div>
+        <label class="form-label">Workout Day </label> <input class="form-control" type="text" name="WorkoutDay" />
+    </div>
+    <div>
+        <label class="form-label">Workout Status </label> <input class="form-control" type="text" name="WorkoutStatus" />
+    </div>
+    <div>
+        <label class="form-label">User Id </label> <input class="form-control" type="number" name="UserId" />
+    </div>
+    <div>
+        <input type="submit" value="Add Workout" class="btn btn-primary"/>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+﻿@model MyPassionProjectW2024n01605783.Models.ExerciseDto
+
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete this Exercise?</h2>
+<a href="/Exercise/List">Cancel</a>
+<h2>@Model.ExerciseName</h2>
+<div>Number of Sets: @Model.NumberOfSets </div>
+<div>Workout Name: @Model.WorkoutName</div>
+<form action="/Exercise/Delete/@Model.ExerciseId" method="POST">
+    <input type="submit" value="Confirm Delete" />
+
+</form>

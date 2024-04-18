@@ -1,0 +1,20 @@
+﻿@model IEnumerable<MyPassionProjectW2024n01605783.Models.UserDto>
+
+@{
+    ViewBag.Title = "List";
+}
+<a href="/User/new" class="btn btn-warning">Add User</a>
+<h2>List</h2>
+<ol class="list-group list-group-numbered">
+    @foreach (var User in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <h2><a href="/User/Details/@User.UserId" class="fw-bold">@User.UserName</a></h2>
+                <div>User Weight: @User.UserWeight</div>
+                <div>User Age: @User.UserAge</div>
+            </div>
+        </li>
+
+    }
+</ol>

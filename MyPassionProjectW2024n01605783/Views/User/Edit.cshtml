@@ -1,0 +1,35 @@
+﻿@model MyPassionProjectW2024n01605783.Models.UserDto
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit User: @Model.UserName</h2>
+
+<form method="POST" action="/User/Update/@Model.UserId">
+    <input type="number" style="display:none;" name="UserId" value="@Model.UserId" />
+    <div>
+        <label>User Name:</label>
+        <input class="form-control" type="text" name="UserName" value="@Model.UserName" />
+    </div>
+    <div>
+        <label>User ID:</label>
+        <input class="form-control" type="text" name="UserId" value="@Model.UserId" />
+    </div>
+    <div>
+        <label>User Description</label>
+        <input class="form-control" type="text" name="UserDescription" value="@Model.UserDescription" />
+    </div>
+    <div>
+        <label>User Weight</label>
+        <input class="form-control" type="text" name="UserWeight" value="@Model.UserWeight" />
+    </div>
+    <div>
+        <label>User Age</label>
+        <input class="form-control" type="text" name="UserAge" value="@Model.UserAge" />
+    </div>
+
+    <input type="submit" value="Update" class="btn btn-outline-success"/>
+    
+
+</form>
