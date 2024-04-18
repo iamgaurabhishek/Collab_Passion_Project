@@ -7,5 +7,6 @@ We used his Exercise's and Workout's table
 ### Together
 Together we will 
 create a project where users can blog about their favourite workouts
+-----------------------------------------------------------------
 • Create, Read, Update, Delete Workouts
 • Create, Read, Update, Delete Exercises
