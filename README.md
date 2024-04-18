@@ -17,3 +17,4 @@ create a project where users can blog about their favourite workouts
 • Create, Read, Update, Delete Blogs
 --
 1. ListExercisesForWorkout
+2. ListWorkoutForBlog
