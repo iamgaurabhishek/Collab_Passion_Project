@@ -11,4 +11,5 @@ create a project where users can blog about their favourite workouts
 • Create, Read, Update, Delete Workouts
 --
 • Create, Read, Update, Delete Exercises
--
+--
+-ListExercisesForWorkout
